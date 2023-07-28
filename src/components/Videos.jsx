@@ -3,7 +3,13 @@ import { Stack, Box } from "@mui/material";
 
 import { ChannelCard, VideoCard } from "./";
 
-const Videos = ({ videos, direction }) => {
+const Videos = ({ videos = [], direction }) => {
+  // Check if the videos array is defined and not null
+  if (!videos || videos.length === 0) {
+    // Return a message or component to indicate that there are no videos.
+    return <p>No videos available.</p>;
+  }
+
   // Sort the videos array so that ChannelCard items come before VideoCard items
   const sortedVideos = videos.sort((a, b) => {
     if (a.id.kind === "youtube#channel" && b.id.kind === "youtube#video") {
