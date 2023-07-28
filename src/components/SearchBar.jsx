@@ -1,4 +1,4 @@
-/* import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
@@ -42,8 +42,11 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar; */
+export default SearchBar; 
 
+
+
+/* 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Paper, IconButton } from '@mui/material';
@@ -106,3 +109,4 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
+ */
